@@ -23,7 +23,7 @@ Sorry nothing here yet
 | 1       | Right Stick X | Turn left/right                      |
 | 1       | Left Trigger  | Strafe Left                          |
 | 1       | Right Trigger | Strafe Right                         |
-| 1       | Left Button   | Slow movement to 6&%                 |
+| 1       | Left Button   | Slow movement to 67%                 |
 | 1       | Right Button  | Slow movement to 33%                 |
 | 1       | Left Stick    | Select point of rotation<sup>1</sup> |
 
