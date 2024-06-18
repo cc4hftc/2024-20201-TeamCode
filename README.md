@@ -27,4 +27,4 @@ Sorry nothing here yet
 | 1       | Right Button  | Slow movement to 33%                 |
 | 1       | Left Stick    | Select point of rotation<sup>1</sup> |
 
-<sup>1</sup>eg. If the Left Stick is up and the driver rotates using the Right Stick S, then the robot's front will be the center of rotation.
+<sup>1</sup>eg. If the Left Stick is up and the driver rotates using the Right Stick X, then the robot's front will be the center of rotation.
