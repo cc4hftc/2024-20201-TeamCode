@@ -3,7 +3,7 @@
 ## OpModes
 | Name          | Type   | Function                      |
 |---------------|--------|-------------------------------|
-| Mecanum Drive | TeleOp | Main driver controlled OpMode |
+| MecanumTeleOp | TeleOp | Main driver controlled OpMode |
 
 ## TeleOps
 Mecanum Drive:
