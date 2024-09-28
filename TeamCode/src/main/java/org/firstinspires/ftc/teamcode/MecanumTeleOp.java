@@ -31,6 +31,7 @@ public class MecanumTeleOp extends LinearOpMode {
         if (isStopRequested()) return;
 
         while (opModeIsActive()) {
+            /*
             double[] xpmult = {
                     0.0, 1.0,
                     0.0, 1.0
@@ -48,11 +49,13 @@ public class MecanumTeleOp extends LinearOpMode {
                     1.0, -1.0
             };
 
+             */
+
             double y = -gamepad1.left_stick_y; // Remember, Y stick value is reversed
             double x = (gamepad1.left_trigger + -gamepad1.right_trigger) * 1.1; // Counteract imperfect strafing
             double rx = gamepad1.left_stick_x;
-            double rorx = gamepad1.right_stick_x;
-            double rory = gamepad1.right_stick_y;
+            //double rorx = gamepad1.right_stick_x;
+            //double rory = gamepad1.right_stick_y;
 
             // Denominator is the largest motor power (absolute value) or 1
             // This ensures all the powers maintain the same ratio,
@@ -63,6 +66,7 @@ public class MecanumTeleOp extends LinearOpMode {
             double frontRightPower = (y - x - rx) / denominator;
             double backRightPower = (y + x - rx) / denominator;
 
+            /*
             if (rorx >= 0) {
                 frontLeftPower  = frontLeftPower  + xpmult[0] * rorx / Math.min(Math.abs(frontLeftPower)  + Math.abs(xpmult[0]) * Math.abs(rorx), 1);
                 frontRightPower = frontRightPower + xpmult[1] * rorx / Math.min(Math.abs(frontRightPower) + Math.abs(xpmult[1]) * Math.abs(rorx), 1);
@@ -86,6 +90,7 @@ public class MecanumTeleOp extends LinearOpMode {
                 backLeftPower   = backLeftPower   - xpmult[2] * rorx / Math.min(Math.abs(backLeftPower)   + Math.abs(ynmult[2]) * Math.abs(rory), 1);
                 backRightPower  = backRightPower  - xpmult[3] * rorx / Math.min(Math.abs(backRightPower)  + Math.abs(ynmult[3]) * Math.abs(rory), 1);
             }
+             */
 
             frontLeftMotor.setPower(frontLeftPower);
             backLeftMotor.setPower(backLeftPower);
